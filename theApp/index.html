@@ -13,22 +13,22 @@
 <body>
 <div ng-app="myApp" ng-controller="myCtrl">
 
-  <nav class="nav" role="navigation">
+  <!--<nav class="nav" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="logo-text" src="HolyCow-text.png"></a>
-<!--         <div class="col search">
+         <div class="col search">
         <input placeholder="Find: burritos, bakeries, smoothies">
-        </div> -->
+        </div>
 
         
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
+  </nav> -->
+  <div class="section no-pad-bot" id="index-banner" style="background-image: url(http://www.raywenderlich.com/wp-content/uploads/2015/05/green_pasture.jpg)">
     <div class="container">
       <br><br>
       <center><img class="logo-text-main center" src="HolyCow-text.png"><img class="logo" src="cow.png"></center>
       <div class="row center">
-        <input type="text" autocomplete="on" placeholder="Restaurant e.g. Pizza Pie Vegan Pizzaria" ng-bind="term">
+        <input type="text" autocomplete="on" placeholder="Restaurant e.g. Pizza Pi Vegan Pizzaria">
       </div>
       <div class="row center">
         <a class="btn-large waves-effect waves-light green" ng-Click="getLocuMenu()">Find A Restaurant</a>
@@ -42,7 +42,7 @@
         <!-- Put search results in this container and make scope variable true -->
   </div>
 
-
+<br>
   <div class="container">
     <div class="section">
     <div class="features">
@@ -123,40 +123,9 @@
     </div>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+  <footer class="page-footer" style="background-image: url(http://theinspirationroom.com/daily/design/2011/5/mu_mu_cow_parade_cows.jpg)">
+  <div class="footer-space"></div>
 
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
   </footer>
 
 

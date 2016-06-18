@@ -26,9 +26,7 @@
 	float: right;
 }
 
-.header {
-	color: #006600;
-}
+
 
 .nav {
 	background-color: #006600;
@@ -40,6 +38,7 @@
 	padding-right: 1%;
 }
 
+
 .logo-text {
 	padding-top: 1.5%;
 	width: 14%;
@@ -50,12 +49,50 @@
 
 }
 
+.top {
+	background-image: url("green_pasture-1.jpg");
+}
+
 h1, h2, h3, h4 {
-	font-family: "Bitstream Charter";
-	font-weight: 700;
+    font-family: 'Impact';
+    margin: 0;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+
+.footer-space {
+	padding: 7%;
+}
+
+.section {
+	background: white;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 2%;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:   black;
+    font-weight: 500;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+   font-weight: 500;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  1;
+   font-weight: 500;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    black;
+   font-weight: 500;
 }
 
 body {
-  background-image: url('http://www.raywenderlich.com/wp-content/uploads/2015/05/green_pasture.jpg');
+	background: #f4f4f4;
 }
+
+
 
