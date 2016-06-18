@@ -9,6 +9,7 @@ from textblob.np_extractors import ConllExtractor
 from textblob.taggers import NLTKTagger
 from textblob import Word
 import numpy as np
+import json
 nltkTagger = NLTKTagger()
 
 file_meatlist = open('cleaner_meat.txt', 'r')
@@ -17,6 +18,8 @@ file_veganlist = open('cleaner_vegan.txt', 'r')    # not being used right now
 
 # turn to 1 to display debug/info
 dbg = 0
+
+samplecall = 0
 
 def filter_list(filter_kwds, menuitem):
     matchFound = 0
@@ -116,6 +119,7 @@ def getFoodType(food_list):
                 resultList.append(1)
     return resultList
 
+
 def getFoodTypeName(food_type_enum):
     if food_type_enum == 1:
         return "vegan"
@@ -124,19 +128,25 @@ def getFoodTypeName(food_type_enum):
     if food_type_enum == 3:
         return "non-vegetarian"
 
-def main():
-    print ""
+def sample_call():
     # a sample case which passes a list of menu items to worker method
     # to get a list of result code for each item.
-    # item1 = 'Crab saute with a side of peas'
-    # item2 = 'crispy artichoke hearts'
-    # item3 = 'french onion soup'
-    # item4 = 'clam chowder'
-    # item5 = 'house special caesar salad'
-    # item_list = [item1, item2, item3, item4, item5]
-    # resList = getFoodType(item_list)
-    # for i in range(len(item_list)):
-    #     print item_list[i] + " : " + getFoodTypeName(resList[i])
+    item1 = 'Crab saute with a side of peas'
+    item2 = 'Crispy artichoke hearts'
+    item3 = 'French onion soup'
+    item4 = 'Clam chowder'
+    item5 = 'House special caesar salad'
+    item_list = [item1, item2, item3, item4, item5]
+    resList = getFoodType(item_list)
+    for i in range(len(item_list)):
+        print item_list[i] + " : " + getFoodTypeName(resList[i])
+
+def main():
+    print ""
+
+    if(samplecall == 1):
+        sample_call()
+
 
 
 if __name__ == '__main__':
