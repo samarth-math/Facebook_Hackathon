@@ -25,3 +25,37 @@
 	width: 33%;
 	float: right;
 }
+
+.header {
+	color: #006600;
+}
+
+.nav {
+	background-color: #006600;
+	transition-property: 30%;
+}
+
+.logo {
+	width: 15%;
+	padding-right: 1%;
+}
+
+.logo-text {
+	padding-top: 1.5%;
+	width: 14%;
+}
+
+.logo-text-main {
+	width: 50%;
+
+}
+
+h1, h2, h3, h4 {
+	font-family: "Bitstream Charter";
+	font-weight: 700;
+}
+
+body {
+  background-image: url('http://www.raywenderlich.com/wp-content/uploads/2015/05/green_pasture.jpg');
+}
+

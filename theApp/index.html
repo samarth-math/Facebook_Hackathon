@@ -11,12 +11,13 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-        <div class="col search">
+<div ng-app="myApp" ng-controller="myCtrl">
+
+  <nav class="nav" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="logo-text" src="HolyCow-text.png"></a>
+<!--         <div class="col search">
         <input placeholder="Find: burritos, bakeries, smoothies">
-        <a><i class="material-icons">search</i></button></a>
-        </div>
+        </div> -->
 
         
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -25,7 +26,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Holy Cow</h1>
+      <center><img class="logo-text-main center" src="HolyCow-text.png"><img class="logo" src="cow.png"></center>
       <div class="row center">
         <input type="text" autocomplete="on" placeholder="Restaurant e.g. Pizza Pie Vegan Pizzaria">
       </div>
@@ -163,6 +164,6 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+</div>
   </body>
 </html>
