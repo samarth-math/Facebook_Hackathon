@@ -6,7 +6,6 @@ Bread sticks
 Bread stuffing
 Cake
 Coffeecake
-Cheesecake commercially prepared
 Cheesecake prepared from mix
 Cookies
 Puff pastry
@@ -30,17 +29,16 @@ Phyllo dough
 Popovers
 Rolls
 Strudel
-Sweet rolls
-Taco shells
+Sweet roll
+Taco shell
 Toaster pastries
-Tortillas
+Tortilla
 Waffles
 salad
 Wonton wrappers 
 Leavening agents
 Breakfast tart
 Artificial Blueberry Muffin Mix
-USDA Commodity
 Waffle
 Toaster Pastries
 Muffin
@@ -65,7 +63,6 @@ KEEBLER
 KASHI
 AUSTIN
 BARBARA DEE
-BEAR NAKED
 FAMOUS AMOS
 GIRL SCOUTS
 JACKSON'S
@@ -157,8 +154,6 @@ Milk shakes
 Whey
 Yogurt
 Egg
-Egg substitute
-Cheese substitute
 Cheese sauce
 Parmesan cheese topping
 Reddi Wip Fat Free Whipped Topping
@@ -177,7 +172,6 @@ Ice cream bar
 Kefir
 Ice cream sundae cone
 Light ice cream
-Imitation cheese
 Whipped topping
 Beverage
 Whipped cream substitute

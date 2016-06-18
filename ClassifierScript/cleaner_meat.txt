@@ -33,7 +33,7 @@ Elk
 Buffalo
 Steelhead trout
 Smelt
-Corned beef and potatoes in tortilla 
+Corned beef
 Tennis Bread
 Salmon
 Agave
@@ -43,7 +43,7 @@ Prairie Turnips
 Rose Hips
 Stinging Nettles
 Pinon Nuts
-Sea lion
+Sealion
 Wocas
 Beef
 Veal
@@ -51,7 +51,6 @@ Lamb
 Game meat
 Bison
 Goat
-Game meat 
 Pork
 Canadian bacon
 HORMEL
