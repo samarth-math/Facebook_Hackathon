@@ -124,8 +124,9 @@ def getFoodTypeName(food_type_enum):
     if food_type_enum == 3:
         return "non-vegetarian"
 
-def main():
-    print ""
+def main(stuff):
+    print stuff
+    return "blah"
     # a sample case which passes a list of menu items to worker method
     # to get a list of result code for each item.
     # item1 = 'Crab saute with a side of peas'

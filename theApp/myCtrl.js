@@ -31,11 +31,27 @@ app.controller("myCtrl", function($scope,$http) {
               "venue_queries" : [{"locu_id":"13320920d3da8f45ddeb" }]
 
         };
-        $http.get('http://127.0.0.7:3000').success(function(data,status,headers,config){
+        $http.get('http://localhost:3000').success(function(data,status,headers,config){
             $scope.venues = data.venues;
-		$scope.text="shit happens?";
-		console.log(data.venues);
-		console.log("DEBUG :  HTTP Get in getLocuMenu()");
+            var menuItems = [];
+            var unParsedMIArr = data.venues[3].menus[0].sections[0].subsections[0].contents;
+            console.log(unParsedMIArr)
+
+            for(i=0;i<unParsedMIArr.length;i++){
+            	menuItems.push(unParsedMIArr[i].name);
+            }
+            var data1={param:"values"};
+            $.ajax({
+					type: "POST",
+					url: "~/Documents/Experiments/E4/Facebook_Hackathon/ClassifierScript.py",
+					data: { param: "data1"}
+				}).done(function( o ) {
+					console.log(o);
+					console.log("Something should've gone down right about now");	
+				});
+            /*$http.post('/home/sam/Documents/Experiments/E4/Facebook_Hackathon/ClassifierScript',data1).success(function(data,status,headers,config){
+            	console.log(data);
+            });*/
         })
     }
 
