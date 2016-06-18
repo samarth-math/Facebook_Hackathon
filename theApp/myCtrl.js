@@ -1,5 +1,5 @@
 app.controller("myCtrl", function($scope,$http) {
-    $Scope.business_names = {};
+    /*$Scope.business_names = {};
     $scope.getYelpSearch=function(terms){
         var url = 'http://api.yelp.com/v2/search';
         var params = {
@@ -22,7 +22,7 @@ app.controller("myCtrl", function($scope,$http) {
             })
         });
     };
-
+*/
     $scope.venues="";
     $scope.getLocuMenu=function(){
         var data ={"api_key" : "fdbcf44407604a877cac1a01c590adc9bf65128e",
@@ -30,7 +30,7 @@ app.controller("myCtrl", function($scope,$http) {
               "venue_queries" : [{"locu_id":"13320920d3da8f45ddeb" }]
 
         };
-        $http.post('http://api.locu.com/v2/venue/search',data).success(function(data,status,headers,config){
+        $http.get('http://127.0.0.7:3000').success(function(data,status,headers,config){
             $scope.venues = data;
         })
     }
