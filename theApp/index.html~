@@ -38,9 +38,9 @@
     </div>
   </div>
   {{text}}
-  {{venues[0]["name"]}}
+  {{venues[0]["locu_id"]}}
   <div class="container" ng-repeat="x in venues">
-{{x["name"]}}
+{{x[country]}}
         <!-- Put search results in this container and make scope variable true -->
   </div>
 

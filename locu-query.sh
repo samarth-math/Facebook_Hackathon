@@ -1,0 +1,1 @@
+curl -X POST https://api.locu.com/v2/venue/search/ -d '{"fields":["name","menus","location","categories","description"],"menu_item_queries":[{"price":{"$lt":6},"name":"burrito"}],"venue_queries":[{"location":{"locality":"San Francisco"}}],"api_key":"dfde5a3db7684a9955eed4596c6007ef18ed6ef7"}'
