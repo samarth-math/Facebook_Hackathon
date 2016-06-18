@@ -25,12 +25,12 @@ app.controller("myCtrl", function($scope,$http) {
 
     $scope.venues="";
     $scope.getLocuMenu=function(){
-        var data =JSON.stringify({"api_key" : "dfde5a3db7684a9955eed4596c6007ef18ed6ef7",
+        var data ={"api_key" : "fdbcf44407604a877cac1a01c590adc9bf65128e",
               "fields" : [ "locu_id","name", "menus" ],
-              "venue_queries" : [{$scope.business_names }]
+              "venue_queries" : [{"locu_id":"13320920d3da8f45ddeb" }]
 
-        });
-        $http.post('api.locu.com/v2/venue/search',data).success(function(data,status,headers,config){
+        };
+        $http.post('http://api.locu.com/v2/venue/search',data).success(function(data,status,headers,config){
             $scope.venues = data;
         })
     }
